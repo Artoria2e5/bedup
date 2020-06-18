@@ -182,8 +182,11 @@ Btrfs defragmentation has to be explicitly requested (or background
 defragmentation enabled), so this generally shouldn't be a problem for
 users who were unaware of the feature.
 
-Users of Linux 3.9 or newer can safely pass the `--defrag` option to
+Users of Linux 3.9 to 3.14 can safely pass the `--defrag` option to
 `bedup dedup`, which will defragment files before deduplicating them.
+See `btrfs_filesystem(8)
+<https://btrfs.wiki.kernel.org/index.php/Manpage/btrfs-filesystem>_.
+for a range of safe versions.
 
 Reporting bugs
 ==============
